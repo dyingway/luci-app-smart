@@ -1,0 +1,29 @@
+#!/usr/bin/ucode
+
+'use strict';
+
+const fs = require('fs');
+
+function get_smart() {
+    let proc = fs.popen('/usr/bin/smart-luci-scan', 'r');
+
+    if (!proc)
+        return {
+            output: ''
+        };
+
+    let output = proc.read('all');
+    proc.close();
+
+    return {
+        output: output
+    };
+}
+
+return {
+    'luci.smart': {
+        get: {
+            call: get_smart
+        }
+    }
+};

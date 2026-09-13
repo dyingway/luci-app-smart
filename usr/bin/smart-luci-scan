@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Scan common NVMe and SCSI/SATA device nodes.
+# The frontend deliberately displays the native smartctl output.
+
+for d in /dev/nvme[0-9] /dev/sd[a-z]; do
+    [ -e "$d" ] || continue
+
+    echo "===SMART_DEVICE_START===$d"
+    /usr/sbin/smartctl -a "$d" 2>&1 || true
+    echo "===SMART_DEVICE_END==="
+done

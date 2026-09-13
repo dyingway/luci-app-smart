@@ -1,0 +1,12 @@
+{
+    "luci-app-smart": {
+        "description": "Grant access to luci.smart",
+        "read": {
+            "ubus": {
+                "luci.smart": [
+                    "get"
+                ]
+            }
+        }
+    }
+}

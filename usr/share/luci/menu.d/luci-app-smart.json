@@ -1,0 +1,15 @@
+{
+    "admin/status/smart": {
+        "title": "SMART",
+        "order": 90,
+        "action": {
+            "type": "view",
+            "path": "smart/overview"
+        },
+        "depends": {
+            "acl": [
+                "luci-app-smart"
+            ]
+        }
+    }
+}
