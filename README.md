@@ -1,7 +1,17 @@
 # luci-app-smart
-To view drive S.M.A.R.T. data directly in LuCI on an OpenWrt system running version 25.12 or newer, follow the program described below. Most of the code and implementation were developed with the assistance of ChatGPT.
-================================
-luci-app-smart
+
+View drive S.M.A.R.T. data directly in LuCI on an OpenWrt system running version 25.12 or newer.
+
+## Most of the code and implementation were developed with the assistance of ChatGPT.
+
+Verified On
+Netgear R7800 — OpenWrt 25.12.5
+OpenWrt One — OpenWrt 25.12.1
+
+
+
+
+## luci-app-smart
 
 A lightweight LuCI frontend for [smartmontools](https://www.smartmontools.org/).
 
