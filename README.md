@@ -8,6 +8,7 @@ Verified On
 Netgear R7800 — OpenWrt 25.12.5
 OpenWrt One — OpenWrt 25.12.1
 
+<img width="1200" height="1124" alt="Capture2" src="https://github.com/user-attachments/assets/69aba552-1248-4ef9-824b-9951752ced28" />
 
 
 
